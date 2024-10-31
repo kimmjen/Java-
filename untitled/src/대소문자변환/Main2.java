@@ -1,8 +1,8 @@
-package base;
+package 대소문자변환;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
 
     public String solution(String str) {
         String answer = "";
@@ -19,7 +19,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Main2 T = new Main2();
         Scanner kd = new Scanner(System.in);
 
         // 예시 입력과 출력
