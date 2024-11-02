@@ -1,4 +1,4 @@
-package base;
+package 특정문자뒤집기;
 
 import java.util.Scanner;
 
@@ -6,22 +6,21 @@ public class Main {
 
     public String solution(String str) {
         String answer;
-        /* str을 기반으로 한 문자 배열*/
+        /* 문자 배열 생성*/
         char[] s = str.toCharArray();
-        /* 첫째, 마지막번째*/
         int lt = 0, rt = str.length() - 1;
         while (lt < rt) {
             if (!Character.isAlphabetic(s[lt])) lt++;
             else if (!Character.isAlphabetic(s[rt])) rt--;
             else {
-                char temp = s[lt];
+                char tmp = s[lt];
                 s[lt] = s[rt];
-                s[rt] = temp;
+                s[rt] = tmp;
                 lt++;
                 rt--;
             }
         }
-        /* static 메소드*/
+        /* 배열 을 스트링으로 전환*/
         answer = String.valueOf(s);
         return answer;
     }
@@ -29,7 +28,7 @@ public class Main {
     public static void main(String[] args) {
         Main T = new Main();
         Scanner kd = new Scanner(System.in);
-        String str = kd.next();
+        String str = kd.nextLine();
         System.out.println(T.solution(str));
     }
 }
