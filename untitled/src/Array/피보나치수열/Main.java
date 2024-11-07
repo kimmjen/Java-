@@ -24,8 +24,11 @@ public class Main {
         int N = scanner.nextInt();
         List<Integer> result = fibonacci(N);
 
-        for (int num: result) {
-            System.out.println(num + " ");
+        for (int i = 0; i < result.size(); i++) {
+            System.out.print(result.get(i));
+            if (i < result.size() - 1) { // 마지막 항이 아닌 경우에만 공백 추가
+                System.out.print(" ");
+            }
         }
     }
 }
