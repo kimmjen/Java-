@@ -1,4 +1,4 @@
-package 문자거리;
+package String.문자거리;
 
 import java.util.Scanner;
 

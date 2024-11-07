@@ -1,4 +1,4 @@
-package 회문문자열;
+package String.회문문자열;
 
 import java.util.Scanner;
 

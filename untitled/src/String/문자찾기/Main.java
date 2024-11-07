@@ -1,4 +1,4 @@
-package 문자찾기;
+package String.문자찾기;
 
 import java.util.Scanner;
 

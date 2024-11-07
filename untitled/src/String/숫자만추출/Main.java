@@ -1,4 +1,4 @@
-package 숫자만추출;
+package String.숫자만추출;
 
 import java.util.Scanner;
 

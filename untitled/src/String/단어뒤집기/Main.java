@@ -1,4 +1,4 @@
-package 단어뒤집기;
+package String.단어뒤집기;
 
 import java.util.ArrayList;
 import java.util.Scanner;

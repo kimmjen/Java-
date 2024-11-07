@@ -1,4 +1,4 @@
-package 중복문자제거;
+package String.중복문자제거;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package 특정문자뒤집기;
+package String.특정문자뒤집기;
 
 import java.util.Scanner;
 

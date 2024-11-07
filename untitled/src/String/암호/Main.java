@@ -1,4 +1,4 @@
-package 암호;
+package String.암호;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class Main {
         Main T = new Main();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt(); // 문자의 개수
-        String s = scanner.next(); // 암호 문자열
+        String s = scanner.next(); // String.암호 문자열
         System.out.println(T.decode(n, s));
     }
 }

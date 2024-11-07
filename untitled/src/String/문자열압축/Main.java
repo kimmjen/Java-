@@ -1,4 +1,4 @@
-package 문자열압축;
+package String.문자열압축;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        숫자만추출.Main T = new 숫자만추출.Main();
+        Main T = new Main();
         Scanner kd = new Scanner(System.in);
         String str = kd.next();
         System.out.println(T.solution(str));

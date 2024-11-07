@@ -1,4 +1,4 @@
-package 유효한팰리드롬;
+package String.유효한팰리드롬;
 
 import java.util.Scanner;
 
