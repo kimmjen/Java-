@@ -6,7 +6,22 @@ public class Main {
 
 
     public String decode(int n, String s) {
-        StringBuilder result = new StringBuilder();
+
+        String answer = "";
+
+        for (int i = 0; i < n; i++) {
+            /* 0부터 7짜리 자르기*/
+            String tmp = s.substring(0, 7).replace('#', '1').replace('*', '0');
+            /* 이진수를 십진수로 변경*/
+            int num = Integer.parseInt(tmp, 2);
+            answer+=(char) num;
+            /*7 그다음 7자리*/
+            s = s.substring(7);
+        }
+
+        return answer;
+
+        /*StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < n; i++) {
             // 7자리씩 잘라냄
@@ -19,7 +34,7 @@ public class Main {
             result.append((char) decimal);
         }
 
-        return result.toString();
+        return result.toString();*/
     }
 
     public static void main(String[] args) {
